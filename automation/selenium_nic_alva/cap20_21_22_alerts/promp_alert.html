@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Codigo para prompt alert</title>
+</head>
+<body>
+<button name="mi boton de prompt alert" onclick="myFunction()">Presiona este botón</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction(){
+	var texto;
+	var usuario = prompt("ingresa tu nombre, porfas: ", "Aqui va tu nombre");
+		if (usuario == null || usuario == "") {
+			texto = "usuario ha cancelado el ingreso de datos";
+		}else{
+			texto = "Hola " + usuario + " Me encantas!!";
+		}
+		document.getElementById("demo").innerHTML = texto;
+	}
+</script>
+
+</body>
+</html>
